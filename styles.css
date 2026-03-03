@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+#hangman-canvas {
+    background-color: #fafafa;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#word-display {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    margin: 1.5rem 0;
+    font-weight: bold;
+    min-height: 3rem;
+}
+
+#message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.key {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.key:hover {
+    background-color: #cbd5e1;
+}
+
+.key:disabled {
+    background-color: #94a3b8;
+    color: #f8fafc;
+    cursor: not-allowed;
+}
+
+#reset-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#reset-btn:hover {
+    background-color: #2563eb;
+}
