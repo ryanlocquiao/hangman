@@ -87,3 +87,44 @@ body {
 #reset-btn:hover {
     background-color: #2563eb;
 }
+
+button {
+    touch-action: manipulation;
+}
+
+@media (max-width: 600px) {
+    #game-container {
+        padding: 1.5rem 1rem;
+        margin: 1rem;
+        width: auto;
+    }
+
+    #word-display {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+        margin: 1rem 0;
+    }
+
+    .keyboard-row {
+        gap: 0.25rem;
+    }
+
+    .key {
+        padding: 0.5rem 0.3rem;
+        font-size: 1rem;
+        min-width: 28px;
+    }
+}
+
+@media (max-width: 380px) {
+    #word-display {
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .key {
+        padding: 0.4rem 0.2rem;
+        font-size: 0.9rem;
+        min-width: 24px;
+    }
+}
