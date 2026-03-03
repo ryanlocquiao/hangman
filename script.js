@@ -30,6 +30,12 @@ function init() {
         startNewGame();
         updateUI();
     });
+
+    document.addEventListener("keydown", (event) => {
+        const letter = event.key.toUpperCase();
+
+        if (/^[A-Z]$/.test(letter)) handleGuess(letter);
+    });
 }
 
 function startNewGame() {
